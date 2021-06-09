@@ -7,9 +7,7 @@
 
 > A simple SPA that converts temperatures from Fahrenheit to Celsius, and vice versa.
 
-### 🏠 [Homepage](site.com)
-
-### ✨ [Demo](site.com)
+### ✨ [Demo](https://affectionate-mcnulty-5e14aa.netlify.app/)
 
 ## Install
 
@@ -27,10 +25,10 @@ yarn run start
 
 👤 **Audrea Cook**
 
-* Website: codewitch.dev
+* Website: [codewitch.dev](https://codewitch.dev)
 * Twitter: [@AudTheCodeWitch](https://twitter.com/AudTheCodeWitch)
 * Github: [@AudTheCodeWitch](https://github.com/AudTheCodeWitch)
-* LinkedIn: [@Audrea Cook](https://linkedin.com/in/Audrea Cook)
+* LinkedIn: [Audrea Cook](https://linkedin.com/in/AudreaCook)
 
 ## Show your support
 
