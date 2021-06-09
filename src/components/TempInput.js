@@ -26,9 +26,15 @@ class TempInput extends Component {
     const temp = this.props.temp
     const scale = this.props.scale
     return (
-      <fieldset>
-        <legend>Enter temperature in {scaleNames[scale]}:</legend>
-        <input value={temp} onChange={this.handleChange} />
+      <fieldset className={'md:flex-grow md:mx-6 drop-shadow self-center'}>
+        <legend className={'sr-only text-primary appearance-none'}>Degrees {scaleNames[scale]}:</legend>
+        <div className={'mx-auto'}>
+          <input value={temp}
+                 onChange={this.handleChange}
+                 className={'h-14 float-left w-10/12 md:w-3/4 text-right text-xl appearance-none border-4 border-transparent rounded py-2 px-4 ' +
+                            'text-primary focus:outline-none bg-primary focus:border-primary'} />
+          <img src={images[scale]} alt={`degrees ${scaleNames[scale]}`} className={'pl-2 h-14 w-2/12 md:w-1/4'}/>
+        </div>
       </fieldset>
     );
   }
