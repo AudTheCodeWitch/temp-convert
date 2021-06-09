@@ -5,9 +5,11 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="App">
+    <div className='flex flex-col h-screen bg-primary'>
       <Header />
-      <Calculator />
+      <div className={'flex-grow'}>
+        <Calculator />
+      </div>
       <Footer />
     </div>
   );
