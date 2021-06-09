@@ -1,4 +1,26 @@
 /* ./src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+:root {
+  @apply light;
+}
+
+.dark {
+  --color-bg-primary: #01161E;
+  --color-bg-secondary: #613e4b;
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #E8D360;
+  --color-border-primary: #02394f;
+}
+
+.light {
+  --color-bg-primary: #F7FAFC;
+  --color-bg-secondary: #ba4c72;
+  --color-text-primary: #613E4B;
+  --color-text-secondary: #BA4C72;
+  --color-border-primary: #E8D360;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
