@@ -26,7 +26,7 @@ class TempInput extends Component {
     const temp = this.props.temp
     const scale = this.props.scale
     return (
-      <fieldset className={'md:flex-grow md:mx-6 drop-shadow self-center'}>
+      <fieldset className={'md:flex-grow md:ml-6 drop-shadow self-center'}>
         <legend className={'sr-only text-primary appearance-none'}>Degrees {scaleNames[scale]}:</legend>
         <div className={'mx-auto'}>
           <input value={temp}
