@@ -1,4 +1,3 @@
-import './App.css';
 import Calculator from "./components/Calculator";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
