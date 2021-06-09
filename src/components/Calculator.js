@@ -2,15 +2,11 @@ import React, {Component} from 'react';
 import TempInput from "./TempInput";
 import Convert from "../assets/convert.svg";
 
-function toCelsius(fahrenheit) {
-  return (fahrenheit - 32) * 5 / 9;
-}
+const toCelsius = fahrenheit => (fahrenheit - 32) * 5 / 9;
 
-function toFahrenheit(celsius) {
-  return (celsius * 9 / 5) + 32;
-}
+const toFahrenheit = celsius => (celsius * 9 / 5) + 32;
 
-function convert(temp, converter) {
+const convert = (temp, converter) => {
   const input = parseFloat(temp);
   if (Number.isNaN(input)) {
     return '';
@@ -18,7 +14,7 @@ function convert(temp, converter) {
   const output = converter(input)
   const rounded = Math.round(output * 10) / 10;
   return rounded.toString();
-}
+};
 
 class Calculator extends Component {
   constructor(props) {
@@ -47,7 +43,6 @@ class Calculator extends Component {
         <TempInput scale="f" temp={f} onChange={this.handleFahrenheitChange} />
         <img src={Convert} alt="convert temperature" className={'mx-auto my-2 transform rotate-90 md:rotate-0'} />
         <TempInput scale="c" temp={c} onChange={this.handleCelsiusChange} />
-        <TempInput scale="f" temp={f} onChange={this.handleFahrenheitChange} />
       </div>
   );
   }
