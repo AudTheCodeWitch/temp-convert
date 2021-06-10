@@ -25,7 +25,32 @@ This is the core feature of Temp Convert.
 
 **Light/Dark Mode**
 
+## Technical Decisions
 
+### Application Architecture
+Currently, Temp Convert has a relatively simple architecture. Individual component files are housed in `./src/components`,
+while image assets (the CodeWitch logo and various icons) are stored in the `./src/assets` directory. All CSS is handled
+in `tailwind.config.js`, `index.css`, or within the components themselves. Because this is a MVP, there is no need for a
+more complicated structure. 
+
+Further iterations of this application may see a slightly more complicated file structure. For example, each component
+could live in its own directory, along with any corresponding test or CSS files. As more features evolve, it may also make
+sense to include a `./src/containers` directory to keep `App.js` from getting too cluttered. An example of this would be
+if the application were to have multiple calculators within the main body of the page.
+
+### UI/UX Design
+Temp Convert has a simple job: take a temperature in one scale and convert it to another. I wanted the interface to reflect
+this simplicity and be self-explanatory. 
+* The application follows the normal Header -> Body -> Footer structure we are all used to seeing to facilitate ease of use.
+* There is very little text on the screen, but alt text and legends are included for screen readers and accessibility.
+* This application is responsive, developed with a mobile-first approach. On mobile, the inputs are stacked vertically,
+  and the two-arrow conversion icon points up and down. On tablet screens and larger, the inputs are displayed horizontally,
+  with the icon pointing left and right.
+* Users can type in either temperature input. The selected input is highlighted with a border in a contrasting color.
+* The color schemes, both light and dark, were chosen with accessibility in mind. The application is still highly legible
+  at multiple levels of visual color impairment.
+* Fonts and icons were chosen to accent the fun, cheerful vibe of the application as well as to correspond with my personal
+  brand as the Code Witch.
 
 ### Tools and Frameworks
 **React via [Create React App](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app)**
@@ -103,9 +128,9 @@ Contributions, issues and feature requests are welcome.
 
 ### 🔧 Open Issues
 
-## Author
+## 🖋 Author
 
-👤 **Audrea Cook**
+👩🏽‍💻 **Audrea Cook**
 
 * Website: [codewitch.dev](https://codewitch.dev)
 * Twitter: [@audthecodewitch](https://twitter.com/audthecodewitch)
