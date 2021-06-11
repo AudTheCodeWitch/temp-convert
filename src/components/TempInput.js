@@ -12,8 +12,10 @@ const images = {
   f: Degree_F
 }
 
+// Display a single input field for a given temperature scale
 class TempInput extends Component {
   constructor(props) {
+    // Expects props for temp, scale, and onChange
     super(props);
     this.handleChange = this.handleChange.bind(this);
   }
@@ -32,8 +34,9 @@ class TempInput extends Component {
                id={scaleNames[scale]}
                type={'number'}
                onChange={this.handleChange}
-               className={'h-14 float-left w-10/12 md:w-3/4 text-right text-xl appearance-none drop-shadow border-4 border-transparent rounded py-2 px-4 ' +
-                          'text-primary focus:outline-none bg-primary focus:border-primary'} />
+               className={'h-14 float-left w-10/12 md:w-3/4 text-right text-xl appearance-none drop-shadow border-4 ' +
+                          'border-transparent rounded py-2 px-4 text-primary focus:outline-none bg-primary ' +
+                          'focus:border-primary'} />
         <img src={images[scale]} alt={`degrees ${scaleNames[scale]}`} className={'pl-2 h-14 w-2/12 md:w-1/4'}/>
       </div>
     );

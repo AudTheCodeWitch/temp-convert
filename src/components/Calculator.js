@@ -16,6 +16,7 @@ const convert = (temp, converter) => {
   return rounded.toString();
 };
 
+// Display the calculator container and handle conversions
 class Calculator extends Component {
   constructor(props) {
     super(props);
