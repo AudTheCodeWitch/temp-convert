@@ -167,7 +167,7 @@ application is stored on GitHub, GitLab, or Bitbucket.
 Contributions, issues and feature requests are welcome.
 [Check out the contributors' Code of Conduct](./code_of_conduct.md).
 
-### 🔧 Open Issues
+### [🔧 Open Issues](https://github.com/AudTheCodeWitch/temp-convert/issues)
 
 ## 🖋 Author
 
