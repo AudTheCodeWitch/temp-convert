@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import Moon from '../assets/moon.svg'
 import Sun from '../assets/sun.svg'
 
-class Toggle extends Component {
+// Toggles the color scheme class on the root element
+class DarkModeToggle extends Component {
   constructor(props) {
     super(props);
     this.handleModeChange = this.handleModeChange.bind(this);
@@ -32,4 +33,4 @@ class Toggle extends Component {
   }
 }
 
-export default Toggle;
+export default DarkModeToggle;
